@@ -1,0 +1,7 @@
+adb disconnect
+adb connect 192.168.0.8
+
+sleep 1
+
+adb push sdma_m2m.ko /data/drivers/sdma
+adb push sdma_m2m_test /data/drivers/sdma

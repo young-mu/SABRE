@@ -1,0 +1,8 @@
+adb disconnect
+adb connect 192.168.0.8
+
+sleep 1
+
+adb push fpp.ko /data/sky/drivers/fpp
+adb push fpp_test /data/sky/drivers/fpp
+adb push FPP_test.rbf /data/sky/drivers/fpp

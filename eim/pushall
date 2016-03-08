@@ -1,0 +1,10 @@
+adb disconnect
+adb connect 192.168.0.8
+
+sleep 1
+
+adb push eim.ko /data/drivers/eim
+adb push eim_test /data/drivers/eim
+adb push eim_speed /data/drivers/eim
+adb push eim_testcpp /data/drivers/eim
+#adb push fpga_ram.rbf /data/drivers/eim
